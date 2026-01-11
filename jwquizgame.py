@@ -148,9 +148,7 @@ class JwQuizGame():
             for player in self.player_scores:
                 max_score = 10
                 current_question = self.card_data[question_counter]
-                #print('\n')
                 print(jBold(jfRed('-'*40)))
-                #print(jRGBGradient(f"{str(player).capitalize()}'s Turn: ", (0,120,255),(255,80,80),True))
                 print(jBold(jfBBlue(f"{str(player).capitalize()}'s Turn: ")))
                 print(jBold(jfRed('-'*40)))
                 print('\n')
@@ -174,30 +172,3 @@ class JwQuizGame():
 
 if __name__ == '__main__':
     JwQuizGame().main_game()
-
-# try: 
-#     # JwQuizGame().gradient_centerer(
-#     #         "GOODBYE!",
-#     #         (255,80,80),
-#     #         (0,120,255),
-#     #         bold=True,
-#     #         underline=True
-#     #     )
-#     TheGame = JwQuizGame()
-#     TheGame.main_game()
-# except KeyboardInterrupt:
-#     print("\n\n")
-#     print(jBold(jfRed('-' * 40)))
-
-#     try:
-#         print("GOODBYE")
-        #JwQuizGame().set_title("GOODBYE!", 0)
-        #TheGame.
-        # JwQuizGame().gradient_centerer(
-        #     "GOODBYE!",
-        #     (255,80,80),
-        #     (0,120,255),
-        #     bold=True,
-        #     underline=True
-        # ),
-        # 0
