@@ -2,13 +2,15 @@ import os
 import time
 import pygame
 import threading
-from JasonColors import jfGreen, jReset, jBold, jfRed, jfCyan, jfYellow, jRGBGradient, jfBBlue, jUnderline
 from random import shuffle
 from rich.progress import Progress
 from rich.align import Align
 from rich.console import Console
 from rich.live import Live
 from assets.config.data.quiz_data import data
+from JasonColors import jfGreen, jReset, jBold, jfRed, jfCyan, jfYellow, jRGBGradient, jfBBlue, jUnderline
+
+# This Module ^ is from my other project, JasonColors, which is a module I created to make it easier to add colors and styles to the terminal output, it also has a function for creating RGB gradients, which I use for the title and the player rankings in this game, I highly recommend checking it out if you want to add some style to your terminal projects, feel free to check it out :)
 
 
 class JwQuizGame():
@@ -19,7 +21,7 @@ class JwQuizGame():
         self.running = True
         pygame.mixer.init()
 
-        #list the sounds you want to play in the background, they will loop until the game ends
+        #list the sounds I want to play in the background, they will loop until the game ends
         self.background_sounds= ["assets/sounds/background_1.wav", "assets/sounds/background_2.wav", "assets/sounds/background_3.mp3"]
         threading.Thread(target=self.background_music_loop, daemon=True).start()
 
