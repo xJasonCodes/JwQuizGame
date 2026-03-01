@@ -10,7 +10,7 @@ from rich.live import Live
 from assets.config.data.quiz_data import data
 from JasonColors import jfGreen, jReset, jBold, jfRed, jfCyan, jfYellow, jRGBGradient, jfBBlue, jUnderline
 
-# This Module ^ is from my other project, JasonColors, which is a module I created to make it easier to add colors and styles to the terminal output, it also has a function for creating RGB gradients, which I use for the title and the player rankings in this game, I highly recommend checking it out if you want to add some style to your terminal projects, feel free to check it out :)
+# This Module ^ is from my other project, JasonColors, which is a module I created to make it easier to add colors and styles to the terminal output, it also has a function for creating RGB gradients, which I use for the title and the player rankings in this game. If you want to add some style to your terminal projects, feel free to check it out thanks :D
 
 
 class JwQuizGame():
